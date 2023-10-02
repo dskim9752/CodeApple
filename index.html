@@ -30,12 +30,12 @@
     //document.querySelector('.list-group').    
     //document.querySelector('#test1').      
     //document.querySelectorAll('#test1')[1].     
-    document.getElementById('nav-btn').addEventListener('click', function() {
+    document.querySelector('#nav-btn').addEventListener('click', function() {
         열기();
     });
       
         function 열기(){
-            document.getElementsByClassName('list-group')[0].classList.toggle('show'); //toggle
+            document.querySelector('.list-group').classList.toggle('show'); //toggle
         }
       
   </script>
