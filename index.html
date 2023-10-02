@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel='stylesheet' href="main.css">
+</head>
+<body>
+    <div class="alert-box" id='alert'>
+            알림창
+    <button onclick="disableDisplay()">닫기</button>
+    
+    </div>
+    <button onclick="enableDisplay()">버튼</button>
+
+<script>
+   
+    function enableDisplay(){
+        document.getElementById('alert').style.display = 'block';
+    }
+    
+    function disableDisplay(){
+        document.getElementById('alert').style.display = 'none';
+    }
+</script>
+</body>
+</html>
