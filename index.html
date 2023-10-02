@@ -13,22 +13,21 @@
   </head>
   <body>
   
+
  <div class="black-bg">
-  <button class="btn btn-danger" id="login-btn">로그인</button>
   <div class="white-bg" id='login-modal'>
     <h4>로그인하세요</h4>
     <button class="btn btn-danger" id="close">닫기</button>
   </div>
 </div>   
-   
+   <button class="btn btn-danger" id="login-btn">로그인</button>
    <script>
-       $('.white-bg').hide();
       $('#login-btn').on('click', function(){
-            $('.white-bg').fadeIn();
+            $('.black-bg').fadeIn();
         })
         
     $('#close').on('click', function(){
-            $('.white-bg').fadeOut();
+            $('.black-bg').fadeOut();
         })
       
       </script>
