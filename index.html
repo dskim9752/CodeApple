@@ -8,20 +8,22 @@
 <body>
     <div class="alert-box" id='alert'>
        <p id='ptxt'>알림창임</p>
-    <button onclick="알림창닫기()">닫기</button>
+    <button id='close'>닫기</button>
     </div>
-    <button onclick="알림창열기('아이디 입력하세요.')">버튼1</button>
-    <button onclick="알림창열기('비밀번호 입력하세요.')">버튼2</button>
+    <button id='openId'>버튼1</button>
+    <button id='openPW'>버튼2</button>
 
 <script>
-   //파라미터
-    function 알림창열기(txt){
-        document.getElementById('ptxt').innerHTML = txt.toString();
-        document.getElementById('alert').style.display = 'block';
-        
-    }
-    function 알림창닫기(){
-        document.getElementById('alert').style.display = 'none';
+   document.getElementById('close').addEventListener('click', function(){
+       document.getElementById('alert').style.display = 'none';
+   })
+    
+    document.getElementById('openId').addEventListener('click', function(){열기('아이디 입력하세요.')});
+    document.getElementById('openPW').addEventListener('click', function(){열기('비밀번호 입력하세요.')});
+    
+    function 열기(txt){
+       document.getElementById('ptxt').innerHTML = txt;
+       document.getElementById('alert').style.display = 'block';
     }
   
 </script>
