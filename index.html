@@ -8,20 +8,18 @@
 <body>
     <div class="alert-box" id='alert'>
             알림창
-    <button onclick="disableDisplay()">닫기</button>
+    <button onclick="setDisplay('none')">닫기</button>
     
     </div>
-    <button onclick="enableDisplay()">버튼</button>
+    <button onclick="setDisplay('block')">버튼</button>
 
 <script>
-   
-    function enableDisplay(){
-        document.getElementById('alert').style.display = 'block';
+   //구멍문법
+    function setDisplay(var mode){
+        document.getElementById('alert').style.display = mode;
     }
     
-    function disableDisplay(){
-        document.getElementById('alert').style.display = 'none';
-    }
+  
 </script>
 </body>
 </html>
