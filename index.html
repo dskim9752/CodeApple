@@ -23,11 +23,11 @@
    <button class="btn btn-danger" id="login-btn">로그인</button>
    <script>
       $('#login-btn').on('click', function(){
-            $('.black-bg').fadeIn();
+            $('.black-bg').addClass('show-modal');
         })
         
     $('#close').on('click', function(){
-            $('.black-bg').fadeOut();
+            $('.black-bg').removeClass('show-modal');
         })
       
       </script>
