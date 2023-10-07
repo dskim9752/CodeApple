@@ -4,21 +4,17 @@
     padding: 20px;
     color: white;
     border-radius: 5px;
-    display: none;
+    visibility: hidden;
 }
 
 
 
 .list-group {
+    visibility: hidden;
+    height: 0px;
 }
 
-.show {
-    display: block;
-}
 
-.hello {
-    display: block;
-}
 
 .black-bg {
   width : 100%;
@@ -27,10 +23,21 @@
   background : rgba(0,0,0,0.5);
   z-index : 5;
   padding: 30px;
+  transition : all 0.5s;  
   visibility: hidden;
   opacity: 0;
-  transition: all 1s;
 }
+
+.show-modal {
+    visibility: visible;
+    height: 100%;
+    opacity: 1 ;
+}
+
+.display {
+    display: block;
+}
+
 
 .white-bg {
   background: white;
@@ -39,8 +46,3 @@
 } 
 
 
-
-.show-modal {
-    visibility: visible;
-    opacity: 1;
-}
