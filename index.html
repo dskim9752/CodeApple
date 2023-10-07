@@ -13,6 +13,16 @@
   </head>
   <body>
 
+
+<ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+   
+
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <span class="navbar-brand">Navbar</span>
@@ -23,33 +33,33 @@
 </nav>  
 
 
-<ul class="list-group">
-  <li class="list-group-item">An item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-    
-<button class="btn btn-danger" id="modal-btn">활성</button>
 
- <div class="black-bg">
-  <div class="white-bg" id='login-modal'>
+
+   <div class="black-bg">
+<div class="white-bg" id='login-modal'>
     <h4>로그인하세요</h4>
     
     <button class="btn btn-danger" id="login-btn">로그인</button>
     <button class="btn btn-danger" id="close">닫기</button>
 </div>   
-   
+</div>
+    
+<button class="btn btn-danger" id="modal-btn">활성</button>
+
+
     
     
     <script>
       $('#tab-btn').on('click', function(){
-          $('.list-group').toggleClass('show');
+          $('.list-group').toggleClass('show-modal');
       })
+    
       
        $('#modal-btn').on('click', function(){
-          $('.black-bg').addClass('display');
+          $('.black-bg').addClass('show-modal');
+      })
+      $('#close').on('click', function(){
+          $('.black-bg').removeClass('show-modal');
       })
     </script>
     
