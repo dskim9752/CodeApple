@@ -4,7 +4,7 @@
 [![image](https://codingapple.com/wp-content/uploads/2019/06/logo2-3.png)](https://codingapple.com)
 
 
-[코딩애플] 자바스크립트 기초 공부용
+[코딩애플] 웹 기초 강좌 공부용
 
 
 ## 2023-10-02
@@ -18,3 +18,9 @@
 
 ## 2023-10-04
 - 폼만들며 배워보는 if else
+
+## 2023-10-07
+- html, css 강좌
+
+## 2023-10-09
+- 강좌별 정리
