@@ -6,6 +6,9 @@
 }
 .container {
     width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -35,27 +38,54 @@
 }
 
 .main-box {
-    width: 70%;
+    width: 80%;
+    height: 200px;
     display: inline-block;
+    background: #eee;
     vertical-align: top;
+    float: left;
     
 }
 
 .image-box {
     width: 20%;
+    height: 200px;
+    background: yellow;
     display: inline-block;
-}
-
-.profile-box {
-    display: inline-block;
-}
-
-.sub-box {
-    display: inline-block;
+     float: left;
 }
 
 .content-box {
+display: inline-block;
+float: left;
+}
+
+
+
+.content-box {
     display: inline-block;
+    width: 100%;
     font-size: 0px;
      vertical-align: top;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.bolg-img {
+     width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    float: left;
+}
+
+.blog-name {
+    float: left;
 }
